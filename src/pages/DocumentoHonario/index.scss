@@ -1,0 +1,71 @@
+.v_containerDocH{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 13px;
+    z-index: 99999999999999999999999999;
+    
+    &--image{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        align-self: center;
+    }
+
+    h1 {
+        align-self: center;
+        margin-bottom: 20px;
+    }
+    h3 {
+        margin-left: 50px; 
+        margin-right: 50px;
+        margin-bottom: 10px;
+    }
+    p {
+        margin-bottom: 10px;
+        margin-right: 50px;
+        margin-left: 50px; 
+    }
+    &__signature{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        align-self: center;
+        margin-top: 50px;
+
+        &--item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+            margin-left: 30px;
+           
+            h2{
+                margin-bottom: 30px;
+            }
+        }
+    }
+    &__witness {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 50px 50px 300px 50px;
+        align-self: center;
+
+
+        &--item{
+            margin-left: 50px;
+  
+
+            span {
+                margin-left: 30px;
+            }
+        }
+    }
+}

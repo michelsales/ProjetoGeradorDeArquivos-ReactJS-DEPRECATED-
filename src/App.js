@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useReducer, createContext } from "react";
+import Routes from "./Routes";
+import { initialValues, reducer } from './reducer/clienteReducer';
+
+export const Context = createContext();
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  const [state, dispatch] = useReducer(reducer, initialValues);
+
+  return (  
+    <Context.Provider value={{state, dispatch}}>
+        <div className="App">
+          <Routes />
+        </div>
+    </Context.Provider>
   );
 }
 

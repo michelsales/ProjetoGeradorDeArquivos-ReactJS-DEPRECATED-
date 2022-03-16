@@ -1,0 +1,41 @@
+.v_all{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d2424;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+
+    &--organization{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &__link{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+            width: 160px;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-top: 20px;
+            background-color: #fff;
+            color: #303030;
+            border: 1px solid #303030;
+            
+            &:hover{
+                background-color: #303030;
+                color: #fff;
+                transition: 0.5s all ease-in-out;
+
+            }
+        }
+    }
+}
